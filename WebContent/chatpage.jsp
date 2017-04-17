@@ -39,7 +39,9 @@
 	   ">
 <button type="button" id="myBtn" onclick="myFunction()" style="background-color:#009;height:100px;width:80px;float:right">send</button>
 </div>
-
+<%
+    String myVar="blabla";
+%>
 <script>
 function myFunction() {
 	
@@ -51,6 +53,6 @@ function myFunction() {
 }
 
 </script>
- 
+
 </body>
 </html>
