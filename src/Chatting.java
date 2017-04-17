@@ -35,7 +35,7 @@ public class Chatting extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		
 
 		String[] assignedResources = request.getParameterValues("ChatPartner");
 		
