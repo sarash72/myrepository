@@ -37,8 +37,20 @@
 	   margin-left:250px;
 	   background-color:#3CF;
 	   ">
+<button type="button" id="myBtn" onclick="myFunction()" style="background-color:#009;height:100px;width:80px;float:right">send</button>
 </div>
 
+<script>
+function myFunction() {
+	
+    var x = document.getElementById("massage").value;
+    document.getElementById("demo").innerHTML = x;
+    var value = "<%=myVar%>";
+        System.out.print(value);
+  
+}
+
+</script>
  
 </body>
 </html>
