@@ -42,7 +42,12 @@ div.border {
 		<%
 			String input_value = request.getParameter("massage");
 			//writer_function("stick_1");
-		
+			String buttons_value = request.getParameter("button1");
+			if ("sticker_1".equals(buttons_value)) {
+				writer_function("sticker_1");
+
+			}
+			writer_function(input_value);
 		%>
 	</form>
 	</div>
@@ -73,7 +78,16 @@ div.border {
 				String line;
 
 				while ((line = reader.readLine()) != null) {
-			 {
+			%>
+			<br>
+			<%
+				if (line.equals("sticker_1")) {
+			%>
+			<img alt=""
+				src="http://telegram-channels.ir/wp-content/uploads/2016/08/cafee_khande.jpg"
+				style="width: 35px; height: 30px; border-style: none;">
+			<%
+				} else {
 						out.println(line + "\n");
 					}
 				}
