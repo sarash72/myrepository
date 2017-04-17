@@ -30,19 +30,19 @@ div.border {
 	<form action="Tst.jsp">
 		<input type="text" id="massage" name="massage"
 			style="border-style: none; height: 100px; width: 700px; margin-left: 250px; background-color: #3CF;">
-		
+		<button type="submit" onclick="" value="sticker_1" name="button1"
+			style="background-color: #FFF; border-style: none;">
+			<img
+				src="http://telegram-channels.ir/wp-content/uploads/2016/08/cafee_khande.jpg"
+				style="width: 35px; height: 30px;">
+		</button>
 		<button type="submit" onclick=""
 			style="background-color: #009; height: 100px; width: 80px; float: right">Send</button>
 
 		<%
 			String input_value = request.getParameter("massage");
 			//writer_function("stick_1");
-			String buttons_value = request.getParameter("button1");
-			if ("sticker_1".equals(buttons_value)) {
-				writer_function("sticker_1");
-
-			}
-			writer_function(input_value);
+		
 		%>
 	</form>
 	</div>
@@ -73,7 +73,7 @@ div.border {
 				String line;
 
 				while ((line = reader.readLine()) != null) {
-			
+			 {
 						out.println(line + "\n");
 					}
 				}
