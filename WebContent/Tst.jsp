@@ -13,10 +13,10 @@
 <style>
 div.border {
 	border-style: none;
-	height: 700px;
-	width: 800px;
+	height: 1000px;
+	width: 600px;
 	padding-right: 20px;
-	margin-left: 250px;
+	margin-left: 50px;
 	background-color: #DDD;
 }
 </style>
@@ -26,10 +26,16 @@ div.border {
 
 
 	<form action="Tst.jsp">
-		<input type="text" id="massage" name="massage"
-			style="border-style: none; height: 100px; width: 700px; margin-left: 250px; background-color: #3CF;">
+		<input type="text" id="massage" name="massage" class="form-control" placeholder="Typing massage..." aria-describedby="sizing-addon1"
+			style=" height: 45px; width: 530px; margin-left: 50px;">
+		
+			<button type="submit" onclick="" value="send" 
+			style="background-color:#09F; height: 35px; width: 70px;">Send</button>
+			
+			<br>
+			<br>
 		<button type="submit" onclick="" value="sticker_1" name="sticker"
-			style="background-color: #FFF; border-style: none;">
+			style="background-color: #FFF; border-style: none;margin-left: 150px;">
 			<img
 				src="data:image/png;base64,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"
 				style="width: 30px; height: 30px;">
@@ -71,16 +77,16 @@ div.border {
 		</button>
 
 
-		<button type="submit" onclick="" value="send" name="sticker"
-			style="background-color: #009; height: 100px; width: 80px; float: right;">Send</button>
-
+		
 
 
 		<%
+		response.setIntHeader("Refresh", 5);
+
 			String input_value = request.getParameter("massage");
 			String buttons_value = request.getParameter("sticker");
-			if ("sticker_1".equals(buttons_value))
-				writer_function("sticker_1");
+			if ("sticker_1".equals(buttons_value)){
+				writer_function("sticker_1");}
 			else if ("sticker_2".equals(buttons_value))
 				writer_function("sticker_2");
 			else if ("sticker_2".equals(buttons_value))
